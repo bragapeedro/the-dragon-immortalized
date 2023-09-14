@@ -1,0 +1,36 @@
+.intro-bg {
+  background-color: var(--gray-12);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
+
+.intro-content>span {
+  display: inline-block;
+  margin-bottom: 28px;
+  font: 400 1.5rem/1.33 "Seven Swordsmen BB", sans-serif;
+  letter-spacing: 0.15rem;
+  color: var(--primary-1);
+  position: relative;
+}
+
+.intro-content>span::after {
+  content: "";
+  display: block;
+  width: 341px;
+  height: 16px;
+  background: url(/img/dec/dec-intro.svg);
+  position: absolute;
+  top: 24px;
+  left: -16px;
+}
+
+.intro-content h1 {
+  margin-bottom: 20px;
+  text-align: left;
+  /* letter-spacing: 1rem; */
+}

@@ -1,0 +1,9 @@
+/* GLOBAL */
+@import "./global/header.css";
+@import "./global/reset.css";
+/* UTILITIES */
+@import "./utilities/colors.css";
+@import "./utilities/typography.css";
+@import "./utilities/components.css";
+/* HOME */
+@import "./home/intro.css";
