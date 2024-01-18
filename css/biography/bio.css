@@ -1,0 +1,10 @@
+.content-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0 28px 0;
+}
+
+.content {
+  display: grid;
+  gap: 40px;
+}
