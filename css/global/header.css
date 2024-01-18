@@ -96,7 +96,7 @@
     border-top: 2px solid;
     width: 20px;
     display: block;
-    color: var(--primary-1);
+    color: var(--gray-1);
   }
 
   .hamb::after,
