@@ -1,0 +1,158 @@
+.movies-title,
+.books-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+
+.movies,
+.books {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  padding: 0 20px 140px 20px;
+}
+
+.year {
+  font: 400 3rem/1 "Cinzel Decorative", cursive;
+}
+
+.year::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: var(--gradient);
+}
+
+.first-column,
+.second-column,
+.third-column,
+.fourth-column,
+.fifth-column {
+  display: grid;
+  gap: 20px;
+}
+
+.first-column,
+.second-column,
+.third-column,
+.fourth-column {
+  border-right: 2px solid var(--gray-2);
+  padding-right: 12px;
+}
+
+.books .first-column,
+.books .second-column,
+.books .third-column,
+.books .fourth-column {
+  border-right: 2px solid var(--gray-11);
+  padding-right: 12px;
+}
+
+.gray-9+.gray-9 {
+  margin-top: 12px;
+}
+
+.gray-6+.gray-6 {
+  margin-top: 12px;
+}
+
+.books-bg {
+  background-color: var(--gray-12);
+}
+
+@media (max-width: 1000px) {
+
+  .movies,
+  .books {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+  }
+
+  .first-column,
+  .second-column,
+  .third-column,
+  .fourth-column,
+  .books .first-column,
+  .books .second-column,
+  .books .third-column,
+  .books .fourth-column {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .movies,
+  .books {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .first-column,
+  .second-column,
+  .third-column,
+  .fourth-column,
+  .books .first-column,
+  .books .second-column,
+  .books .third-column,
+  .books .fourth-column {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .movies-title,
+  .books-title {
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+
+  .movies-title h1,
+  .books-title h1 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .movies-title img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .year {
+    font-size: 2rem;
+  }
+
+  .year+p {
+    font-size: 1rem;
+  }
+
+  .movies-title img {
+    display: none;
+  }
+
+  .movies,
+  .books {
+    grid-template-columns: 1fr;
+    padding-bottom: 60px;
+  }
+
+  .first-column,
+  .second-column,
+  .third-column,
+  .fourth-column,
+  .books .first-column,
+  .books .second-column,
+  .books .third-column,
+  .books .fourth-column {
+    border-right: none;
+    padding-right: 0;
+  }
+}

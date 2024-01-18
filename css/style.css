@@ -9,3 +9,6 @@
 @import "./home/intro.css";
 /* BIO */
 @import "./biography/bio.css";
+/* WORKS */
+@import "./works/movies.css";
+@import "./works/books.css";
