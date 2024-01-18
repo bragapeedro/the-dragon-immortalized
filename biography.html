@@ -16,8 +16,11 @@
   <header class="header-bg">
     <div class="header container">
       <a href="./"><img src="./img/kick-logo.svg" alt="Logo do bruce lee dando um chute no ar"></a>
-      <nav aria-label="primaria">
-        <ul class="header-menu">
+      <nav aria-label="primaria" class="nav">
+        <button aria-label="Abrir Menu" class="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true">Menu
+          <span class="hamb"></span>
+        </button>
+        <ul class="header-menu" id="menu" role="menu">
           <li><a href="./biografia">Biografia</a></li>
           <li><img src="./img/dec/dec-nav.svg" alt=""></li>
           <li><a href="./filmografia">Filmografia</a></li>
@@ -42,5 +45,6 @@
     </div>
   </main>
 </body>
+<script src="./script.js"></script>
 
 </html>

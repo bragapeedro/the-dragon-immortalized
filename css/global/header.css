@@ -17,8 +17,8 @@
 }
 
 .header-menu a {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  display: block;
+  padding: 8px;
   font: 400 1.125rem/1.33 "Cinzel Decorative", cursive;
   color: var(--gray-1);
   position: relative;
@@ -37,4 +37,90 @@
 
 .header-menu li a:hover::after {
   width: 100%;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .btn-mobile {
+    display: block;
+  }
+
+  .header-menu a {
+    padding: 16px 0;
+    margin: 0 16px;
+    border-bottom: 2px solid var(--primary-1);
+  }
+
+  .header-menu li a::after {
+    display: none;
+  }
+
+  .header-menu img {
+    display: none;
+  }
+
+  .header-menu {
+    display: block;
+    /* padding-top: 0px; */
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0px;
+    background-color: var(--gray-12);
+    height: 0px;
+    z-index: 1;
+    visibility: hidden;
+    transition: 0.7s;
+    overflow-y: hidden;
+  }
+
+  .nav.active .header-menu {
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .btn-mobile {
+    display: flex;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .hamb {
+    border-top: 2px solid;
+    width: 20px;
+    display: block;
+    color: var(--primary-1);
+  }
+
+  .hamb::after,
+  .hamb::before {
+    margin-top: 4px;
+    width: 20px;
+    height: 2px;
+    content: "";
+    display: block;
+    background: currentColor;
+    transition: .4s;
+    position: relative;
+  }
+
+  .nav.active .hamb {
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamb::after {
+    transform: rotate(-135deg);
+    top: -6px;
+  }
+
+  .nav.active .hamb::before {
+    transform: rotate(135deg);
+  }
 }
