@@ -1,10 +1,10 @@
 .life {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 160px 80px;
+  gap: 100px 80px;
   justify-items: left;
   position: relative;
-  padding-top: 200px;
+  padding-top: 180px;
   padding-bottom: 100px;
 }
 
