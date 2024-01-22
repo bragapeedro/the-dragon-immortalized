@@ -8,6 +8,7 @@
 /* HOME */
 @import "./home/intro.css";
 @import "./home/dec.css";
+@import "./home/infancy.css";
 /* BIO */
 @import "./biography/bio.css";
 /* WORKS */

@@ -11,6 +11,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--gray-1);
 }
 
 img,
@@ -40,12 +41,17 @@ h6 {
   overflow-wrap: break-word;
 }
 
+img[src$=".jpg"] {
+  border-radius: 4px;
+}
+
 #root,
 #__next {
   isolation: isolate;
 }
 
-ul {
+ul,
+li {
   padding: 0px;
   list-style: none;
 }

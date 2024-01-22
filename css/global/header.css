@@ -18,7 +18,8 @@
 
 .header-menu a {
   display: block;
-  padding: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font: 400 1.125rem/1.33 "Cinzel Decorative", cursive;
   color: var(--gray-1);
   position: relative;
