@@ -1,0 +1,38 @@
+.dec-bg {
+  border-bottom: 1px solid var(--gray-11);
+  margin-bottom: 200px;
+}
+
+.dec {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  align-items: center;
+}
+
+.dec p {
+  font: 700 3rem/1 "Cinzel Decorative", cursive;
+}
+
+@media (max-width: 800px) {
+  .dec p {
+    display: none;
+  }
+
+  .dec img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .dec img {
+    height: 60px;
+    width: 57px;
+  }
+
+  .dec {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}

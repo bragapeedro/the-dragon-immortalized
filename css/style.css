@@ -7,6 +7,7 @@
 @import "./utilities/components.css";
 /* HOME */
 @import "./home/intro.css";
+@import "./home/dec.css";
 /* BIO */
 @import "./biography/bio.css";
 /* WORKS */
