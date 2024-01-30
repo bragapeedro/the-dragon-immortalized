@@ -41,7 +41,7 @@ h6 {
   overflow-wrap: break-word;
 }
 
-img[src$=".jpg"] {
+img[src$=".webp"] {
   border-radius: 4px;
 }
 

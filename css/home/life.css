@@ -5,7 +5,7 @@
   justify-items: left;
   position: relative;
   padding-top: 180px;
-  padding-bottom: 100px;
+  padding-bottom: 420px;
 }
 
 .life-year {
@@ -19,7 +19,7 @@
 }
 
 .life p {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .life-photo {
@@ -79,6 +79,10 @@
     font-size: 3rem;
     top: 500px;
   }
+
+  .life {
+    padding-bottom: 120px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -102,7 +106,7 @@
 @media (max-width: 600px) {
   .life {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   .life h1 {
@@ -115,7 +119,7 @@
 
   .life-content p {
     font-size: 1rem;
-    padding-top: 8px;
+    margin-top: 12px;
   }
 
   .life-photo::before {

@@ -1,0 +1,127 @@
+.adult {
+  background-color: var(--gray-12);
+  padding-right: 260px;
+  padding-left: 260px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 80px;
+  align-items: center;
+  box-shadow: inset 0 80px 0 0 var(--gray-1), inset 0 -80px 0 0 var(--gray-1);
+  position: relative;
+}
+
+.adult-year {
+  position: absolute;
+  rotate: 90deg;
+  right: 0px;
+}
+
+.adult-content p {
+  margin-top: 20px;
+}
+
+.white-stripes {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 200px;
+  height: 80px;
+  z-index: 0;
+  top: 0;
+}
+
+.white-stripes li {
+  width: 2px;
+  background-color: var(--gray-2);
+}
+
+.black-stripes {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 120px;
+  height: calc(100% - 160px);
+  z-index: 0;
+}
+
+.black-stripes li {
+  width: 2px;
+  background-color: var(--black);
+}
+
+.adult-content {
+  z-index: 1;
+}
+
+.adult picture {
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 4px;
+  position: relative;
+}
+
+@media (max-width: 1450px) {
+  .white-stripes {
+    right: 20px;
+    height: 60px;
+  }
+
+  .black-stripes {
+    height: calc(100% - 120px);
+  }
+
+  .adult {
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 120px;
+    gap: 60px;
+    box-shadow: inset 0 60px 0 0 var(--gray-1), inset 0 -60px 0 0 var(--gray-1);
+    overflow-x: hidden;
+  }
+
+  .adult-year {
+    font-size: 8rem;
+    right: -40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .adult {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-items: center;
+    box-shadow: inset 0 60px 0 0 var(--gray-1);
+    gap: 40px;
+  }
+
+  .adult picture {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .adult-content {
+    order: 2;
+  }
+
+  .adult-year,
+  .adult ul {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .adult-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .adult-content p {
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+}
