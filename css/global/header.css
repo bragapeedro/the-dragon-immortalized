@@ -49,6 +49,11 @@
     display: block;
   }
 
+  .header>a {
+    width: 52px;
+    height: 50px;
+  }
+
   .header-menu a {
     padding: 16px 0;
     margin: 0 16px;
