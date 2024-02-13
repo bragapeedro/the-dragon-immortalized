@@ -1,28 +1,24 @@
-.life {
+.death {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 100px 80px;
   justify-items: left;
   position: relative;
-  padding-top: 180px;
+  padding-top: 200px;
   padding-bottom: 420px;
 }
 
-.life-year {
+.death-year {
   position: absolute;
-  top: 920px;
+  top: 700px;
   right: -120px;
 }
 
-.life h1 {
-  grid-column: 1/-1;
-}
-
-.life p {
+.death p {
   margin-top: 20px;
 }
 
-.life-photo {
+.death-photo {
   height: 100%;
   object-fit: cover;
   object-position: bottom;
@@ -30,25 +26,11 @@
   position: relative;
 }
 
-.life-photo::before {
-  content: "";
-  width: 360px;
-  height: 518px;
-  display: block;
-  background: var(--gradient);
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  border-radius: 4px;
-  z-index: -1;
-}
-
-.life-stripes {
-  position: relative;
+.death-stripes {
   display: flex;
 }
 
-.life-stripes ul {
+.death-stripes ul {
   display: flex;
   gap: 20px;
   position: absolute;
@@ -57,76 +39,64 @@
   z-index: -1;
 }
 
-.life-stripes ul li {
+.death-stripes ul li {
   width: 2px;
-  background-color: var(--gray-2);
+  background: linear-gradient(#E6EAF0, #F5F7FA);
 }
 
 @media (max-width: 1450px) {
-  .life-year {
-    font-size: 10rem;
+  .death-stripes ul {
     right: 20px;
-    top: 960px;
   }
 
-  .life-stripes ul {
+  .death-year {
+    font-size: 10rem;
     right: 20px;
+    top: 760px;
   }
 }
 
 @media (max-width: 1000px) {
-  .life-year {
+  .death-year {
     font-size: 3rem;
-    top: 420px;
+    top: 175px;
   }
 
-  .life {
+  .death {
     padding-bottom: 120px;
   }
 }
 
 @media (max-width: 900px) {
 
-  .life-year,
-  .life-stripes ul {
+  .death-year,
+  .death-stripes ul {
     display: none;
   }
 
-  .life {
+  .death {
     grid-template-columns: 1fr;
     gap: 40px;
     padding-top: 80px;
   }
 
-  .life-photo {
+  .death-photo {
     justify-self: center;
   }
 }
 
 @media (max-width: 600px) {
-  .life {
-    padding-top: 60px;
-    padding-bottom: 80px;
+  .death {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
-  .life h1 {
-    font-size: 2rem;
-  }
-
-  .life-content h2 {
+  .death-content h2 {
     font-size: 1.5rem;
   }
 
-  .life-content p {
+  .death-content p {
     font-size: 1rem;
     margin-top: 12px;
-  }
-
-  .life-photo::before {
-    max-width: 100%;
-    height: 30px;
-    top: -8px;
-    left: 0px;
-    border-radius: 4px;
   }
 }
